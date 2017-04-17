@@ -27,7 +27,7 @@ public class ExcelDataConfig
 	}
 	public String getData(int sheetNumber, int row, int column)
 	{
-m		sheet1=wb.getSheetAt(sheetNumber);
+		sheet1=wb.getSheetAt(sheetNumber);
 		String data = sheet1.getRow(row).getCell(column).getStringCellValue();
 		return data;
 	}
